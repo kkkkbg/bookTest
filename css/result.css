@@ -1,0 +1,21 @@
+#result{
+    display: none;
+    background-color: whitesmoke;
+    text-align: center;
+    border-radius: 20px;
+    width: 80%;
+}
+
+#shareResult{
+    background-color: whitesmoke;
+    text-align: center;
+    border-radius: 20px;
+    width: 80%;
+}
+
+.resultname{
+    font-size: 20px;
+}
+.resultDesc{
+    font-size: 20px;
+}
