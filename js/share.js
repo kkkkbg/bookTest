@@ -1,13 +1,13 @@
 const url = 'https://before2pm.netlify.app/';
 
-//결과 화면에서 결과 번호를 받음
+//카톡공유버튼 클릭했을 때 호출. 결과 화면에서 결과 번호를 받음
 function setShare(){
     var resultImg = document.querySelector('#resultImg');
-    var resultAlt = resultImg.firstElementChild.alt;
+    var resultAlt = resultImg.firstElementChild.alt;  //책번호
     const shareTitle = '두시전테스트 결과';
-    const shareDes = infoList[resultAlt].name;
+    const shareDes = infoList[resultAlt].name;  //책이름
     const shareImage = url + 'img/image-' + resultAlt + '.jpeg';
-    const shareURL = url + 'page.result-' + resultAlt + '.html';
+    const shareURL = url + 'page.result-' + resultAlt + '.html';  //이거 해줄려고 html 하나하나 만들었음,,
     
     Kakao.Share.sendDefault({
         objectType: 'feed',
@@ -16,16 +16,16 @@ function setShare(){
           description: '내 최애 책은 '+shareDes+'(✿◡‿◡)',
           imageUrl: shareImage,
           link: {
-            mobileWebUrl: 'shareURL',
-            webUrl: 'shareURL',
+            mobileWebUrl: shareURL,
+            webUrl: shareURL,
           },
         },
         buttons: [
           {
-            title: '님두 한번 해보시겟어요?',
+            title: '결과 구경가기',
             link: {
-              mobileWebUrl: 'shareURL',
-              webUrl: 'shareURL',
+              mobileWebUrl: shareURL,
+              webUrl: shareURL,
             },
           },
         ]
