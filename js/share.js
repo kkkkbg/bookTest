@@ -7,7 +7,7 @@ function setShare(){
     const shareTitle = '두시전테스트 결과';
     const shareDes = infoList[resultAlt].name;  //책이름
     const shareImage = url + 'img/image-' + resultAlt + '.jpeg';
-    const shareURL = url + 'page_result-' + resultAlt + '.html';  //이거 해줄려고 html 하나하나 만든거임!!
+    const shareURL = url + 'page/result-' + resultAlt + '.html';  //이거 해줄려고 html 하나하나 만든거임!!
     
     Kakao.Share.sendDefault({
         objectType: 'feed',
