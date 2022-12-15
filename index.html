@@ -1,22 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-251699265-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-251699265-1');
-</script>
     <meta charset="UTF-8">
+    <!-- 모든 장치에서 잘 보이도록 설정 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 문서의 저자를 정의 -->
     <meta name="author" content="kkkkbg">
+    <!-- 검색 키워드 -->
     <meta name="keywords" content="두시전테스트">
+    <!-- 페이지 설명 -->
     <meta name="description" content="두시전테스트">
 
     <!-- sns share -->
+    <!-- 메타태그를 이용해 링크공유 시 썸네일 사진,정보 표시할 수 있도록 데이터를 설정함(오픈그래프) -->
     <meta property="og:url" content="https://before2pm.netlify.app" />
     <meta property="og:title" content="우리 모임 정상영업합니다" />
     <meta property="og:type" content="website" />
@@ -24,6 +20,7 @@
     <meta property="og:description" content="나에게 어울리는 책을 찾아보자!" />
 
     <!-- favicon -->
+    <!-- 탭에 붙는 아이콘 설정 -->
     <link rel="shortcut icon" href="img/icon.png">
     <link rel="apple-touch-icon-precomposed" href="img/icon.png">
 
@@ -35,8 +32,10 @@
     <link rel="stylesheet" href="./css/qna.css">
     <link rel="stylesheet" href="./css/animation.css">
     <link rel="stylesheet" href="./css/result.css">
+    <!-- 카카오 JavaScript SDK 파일 -->
     <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.0.0/kakao.min.js" integrity="sha384-PFHeU/4gvSH8kpvhrigAPfZGBDPs372JceJq3jAXce11bVA6rMvGWzvP4fMQuBGL" crossorigin="anonymous"></script>
   <script>
+    // JavaScript SDK를 초기화
     Kakao.init('f2ba3bab3efc397c483733decbdfef36');
 Kakao.isInitialized();
   </script>
@@ -51,31 +50,34 @@ Kakao.isInitialized();
                 <p>
                     얇고 길게 오래가자!! 그런데 이제 벌금은 굵은
                 </p>
+                <!-- 시작하기 누르면 서서히 사라지고 나타나도록 하는 함수 적용. 다음 페이지 불러옴 -->
                 <button type="button" class="btn btn-outline-success mt-3" onclick="return begin()">시작하기</button>
         </section>
+
         <section id="qna">
             <div class="status mx-auto mt-5">
                 <div class="statusBar">
-
+                    <!-- 상태바 들어올 자리 -->
                 </div>
             </div>
             <div class="qBox my-5 py-3 mx-auto">
-
+                <!-- Q1 질문 뿌리는 자리 -->
             </div>
             <div class="answerBox">
-
+                <!-- 답변 뿌리는 자리 -->
             </div>
         </section>
+
         <section id="result" class="mx-auto my-5 pb-5 px-3">
             <h3 class="pt-5">횐님에게 딱 맞는 책이에요</h3>
             <div class="resultname">
-                
+                <!-- 책이름 자리 -->
             </div>
             <div id="resultImg" class="my-3 col-lg-6 col-md-8 col-sm-10 col-12 col- mx-auto">
-            
+                <!-- 책 이미지 자리 -->
             </div>
             <div class="resultDesc">
-
+                <!-- 책 설명 자리 -->
             </div>
             <script type="text/javascript">
                 function moveHome(){
