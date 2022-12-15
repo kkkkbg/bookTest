@@ -1,18 +1,4 @@
 /*
-mouse,0
-cow,1
-tiger,2
-rabbit,3
-dragon,4
-snake,5
-horse,6
-sheep,7
-monkey,8
-chick,9
-dog,10
-pig,11
-*/
-/*
 달까지 가자,0
 코스모스,1
 사피엔스,2
